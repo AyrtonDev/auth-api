@@ -2,6 +2,10 @@
   "name": "base-backend-api",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsnd src/server.ts"
+  },
   "repository": "git@github.com:AyrtonDev/base-backend-api.git",
   "author": "Ayrton <ayrton.guerra@cliqx.com.br>",
   "license": "MIT",
