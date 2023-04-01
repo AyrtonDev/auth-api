@@ -2,6 +2,7 @@ import express, { Request, Response } from "express"
 import path from "path"
 import dotenv from "dotenv"
 import cors from "cors"
+import router from "./routes/main"
 
 dotenv.config()
 
@@ -13,6 +14,8 @@ app.use(cors())
 
 app.use(express.static(path.join(__dirname, "../public")))
 app.use(express.urlencoded({ extended: true }))
+
+app.use(router)
 
 app.use((req: Request, res: Response) => {
   res.status(404)
