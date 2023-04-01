@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "dev": "tsnd src/server.ts"
+    "dev": "tsnd src/app.ts"
   },
   "repository": "git@github.com:AyrtonDev/base-backend-api.git",
   "author": "Ayrton <ayrton.guerra@cliqx.com.br>",
